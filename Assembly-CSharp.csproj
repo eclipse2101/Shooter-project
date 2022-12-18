@@ -37,7 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/AreoController.cs" />
-     <Compile Include="Assets/Scripts/BulletScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Users/game1/Desktop/2020.3.42f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
