@@ -8,6 +8,7 @@ public class AreoController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
+    Vector2 lookdirection = new Vector2(1, 0);
     
     public GameObject projectilePrefab;
 
@@ -27,6 +28,10 @@ public class AreoController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            Launch(); 
+        }
     }
 
     private void FixedUpdate() // the movement script
@@ -35,6 +40,15 @@ public class AreoController : MonoBehaviour
        position.x = position.x + speed * horizontal * Time.deltaTime; // this function will change the speed of how fast your character moves
        position.y = position.y + speed * vertical * Time.deltaTime;
        rigidbody2d.MovePosition(position);
+    }
+    
+    void Launch()// this needs to be fixed. This part is gonna make me scream
+    {
+     GameObject BulletScript = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+
+     BulletScript CogAmmo = BulletScript.GetComponent<BulletScript>();
+     CogAmmo.Launch(lookdirection, 300); 
+     
     }
     
 }
