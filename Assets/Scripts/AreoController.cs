@@ -37,8 +37,8 @@ public class AreoController : MonoBehaviour
     private void FixedUpdate() // the movement script
     {
         Vector2 position = rigidbody2d.position;
-       position.x = position.x + speed * horizontal * Time.deltaTime; // this function will change the speed of how fast your character moves
-       position.y = position.y + speed * vertical * Time.deltaTime;
+       position.x = position.x + 6.0f * horizontal * Time.deltaTime; // this function will change the speed of how fast your character moves
+       position.y = position.y + 6.0f * vertical * Time.deltaTime;
        rigidbody2d.MovePosition(position);
     }
     
