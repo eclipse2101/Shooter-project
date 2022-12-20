@@ -225,6 +225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Aerosmith
       objectReference: {fileID: 0}
+    - target: {fileID: 7546223089959783297, guid: 528cfd64d4e244194960d9a23059d7eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7546223089959783308, guid: 528cfd64d4e244194960d9a23059d7eb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -275,3 +279,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 528cfd64d4e244194960d9a23059d7eb, type: 3}
+--- !u!1001 &7692006375960530506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06756757
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489557, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692006377808489559, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}
+      propertyPath: m_Name
+      value: goofy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82283b656737146f0bb68ace2315fbe0, type: 3}

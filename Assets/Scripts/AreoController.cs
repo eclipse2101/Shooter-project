@@ -8,7 +8,7 @@ public class AreoController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-    Vector2 lookdirection = new Vector2(1, 0);
+    Vector2 lookdirection = new Vector2(0, 1);
     
     public GameObject projectilePrefab;
 
@@ -37,8 +37,8 @@ public class AreoController : MonoBehaviour
     private void FixedUpdate() // the movement script
     {
         Vector2 position = rigidbody2d.position;
-       position.x = position.x + 6.0f * horizontal * Time.deltaTime; // this function will change the speed of how fast your character moves
-       position.y = position.y + 6.0f * vertical * Time.deltaTime;
+       position.x = position.x + speed * horizontal * Time.deltaTime; // this function will change the speed of how fast your character moves
+       position.y = position.y + speed * vertical * Time.deltaTime;
        rigidbody2d.MovePosition(position);
     }
     
