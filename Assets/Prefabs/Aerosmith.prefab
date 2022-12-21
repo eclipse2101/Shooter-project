@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7546223089959783310}
   - component: {fileID: 7546223089959783311}
   - component: {fileID: 7546223089959783296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Aerosmith
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &7546223089959783296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,4 +145,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 5440165627785622194, guid: 23e0e45801140422e8ddd1201c197236, type: 3}
