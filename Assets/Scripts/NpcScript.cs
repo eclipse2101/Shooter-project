@@ -32,11 +32,13 @@ public class NpcScript : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D other)
     {
+        
+        
         if (other.gameObject.CompareTag("Border 1") || other.gameObject.CompareTag("Border 2")) 
         {
             direction = -direction; 
         }
-        
+
     }
 
 }
