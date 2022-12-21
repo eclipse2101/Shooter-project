@@ -24,7 +24,7 @@ public class BulletScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) // fix this
     {   
-        Debug.Log("The cog has touched with" + other.gameObject);
+        Debug.Log("The bullet has touched with" + other.gameObject);
         Destroy(gameObject);
     }
 }
