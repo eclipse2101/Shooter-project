@@ -22,7 +22,7 @@ public class BulletScript : MonoBehaviour
         rigibody2D.AddForce(direction * force); 
     }
 
-    void OnCollisionEnter2D(Collision2D other) // fix this
+    void OnCollisionEnter2D(Collision2D other) 
     {   
         Debug.Log("The bullet has touched with" + other.gameObject);
         Destroy(gameObject);

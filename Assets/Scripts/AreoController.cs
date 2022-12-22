@@ -42,7 +42,7 @@ public class AreoController : MonoBehaviour
        rigidbody2d.MovePosition(position);
     }
     
-    void Launch()// this needs to be fixed. This part is gonna make me scream
+    void Launch()
     {
      GameObject BulletScript = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
 
@@ -50,5 +50,15 @@ public class AreoController : MonoBehaviour
      CogAmmo.Launch(lookdirection, 300); 
      
     }
+
+     void OnCollisionEnter2D(Collision2D other)
+     {
+        // death script
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Npc Bullet"))
+        {
+            Destroy(gameObject);
+        }
+     }
+    
     
 }

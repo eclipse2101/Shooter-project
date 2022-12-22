@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class NpcScript : MonoBehaviour
 {
-    float startTimer = 3.0f; 
+    public float startTimer; 
     float timer; 
     float direction = 1f; 
-    Rigidbody2D rigibody2D; 
+    Rigidbody2D rigibody2D;
+    public GameObject projectilePrefab;
+    Vector2 lookdirection = new Vector2(0, -1);
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,22 @@ public class NpcScript : MonoBehaviour
     // Update is called once per frame
     void update()
     {
-        
+      timer -= Time.deltaTime;
+
+        if (timer < 0)
+        {
+            Launch();
+            timer = startTimer;
+        }  
+    }
+
+    void Launch()
+    {
+     GameObject BulletScript = Instantiate(projectilePrefab, rigibody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+
+     BulletScript CogAmmo = BulletScript.GetComponent<BulletScript>();
+     CogAmmo.Launch(lookdirection, 300); 
+     
     }
     
     void FixedUpdate()
@@ -30,15 +47,22 @@ public class NpcScript : MonoBehaviour
         rigibody2D.MovePosition(enemyPosition);  
     }
 
-    void OnCollisionEnter2D (Collision2D other)
+    void OnCollisionEnter2D (Collision2D other) // this is for the enemy to change direction and die if it gets touched by a bullet
     {
         
         
-        if (other.gameObject.CompareTag("Border 1") || other.gameObject.CompareTag("Border 2")) 
+        if (other.gameObject.CompareTag("Border 1") || other.gameObject.CompareTag("Border 2") || other.gameObject.CompareTag("Enemy")) 
         {
             direction = -direction; 
         }
 
+        if (other.gameObject.CompareTag("Player Bullet"))
+        {
+            Destroy(gameObject);
+        }
+
     }
+
+
 
 }
