@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8552496282596718438}
   - component: {fileID: 7742326953103888930}
   - component: {fileID: 3198201253091439733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NpcBullet
   m_TagString: Npc Bullet
   m_Icon: {fileID: 0}

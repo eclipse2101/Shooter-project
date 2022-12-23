@@ -19,7 +19,7 @@ public class NpcScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void update()
+    void Update()
     {
       timer -= Time.deltaTime;
 
@@ -36,6 +36,8 @@ public class NpcScript : MonoBehaviour
 
      BulletScript CogAmmo = BulletScript.GetComponent<BulletScript>();
      CogAmmo.Launch(lookdirection, 300); 
+
+     Debug.Log("Here");
      
     }
     
